@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rock Paper Scissors</h1>
+            <p class="subtitle">Test your luck and strategy in this classic game!</p>
+        </header>
+        
+        <div class="game-area">
+            <div class="score-board">
+                <div class="score player-score">
+                    <h3>Player</h3>
+                    <div class="score-value" id="player-score">0</div>
+                </div>
+                <div class="score computer-score">
+                    <h3>Computer</h3>
+                    <div class="score-value" id="computer-score">0</div>
+                </div>
+            </div>
+            
+            <div class="choices">
+                <div class="choice player-choice">
+                    <h3>Your Choice</h3>
+                    <div class="choice-icon" id="player-choice-icon">✊</div>
+                    <div class="choice-name" id="player-choice-name">-</div>
+                </div>
+                
+                <div class="vs">VS</div>
+                
+                <div class="choice computer-choice">
+                    <h3>Computer's Choice</h3>
+                    <div class="choice-icon" id="computer-choice-icon">✊</div>
+                    <div class="choice-name" id="computer-choice-name">-</div>
+                </div>
+            </div>
+            
+            <div class="result">
+                <div class="result-text" id="result-text">Make your move!</div>
+            </div>
+            
+            <div class="choices-container">
+                <button class="btn-choice" data-choice="rock">
+                    <span class="icon">✊</span>
+                    <span class="label">Rock</span>
+                </button>
+                <button class="btn-choice" data-choice="paper">
+                    <span class="icon">✋</span>
+                    <span class="label">Paper</span>
+                </button>
+                <button class="btn-choice" data-choice="scissors">
+                    <span class="icon">✌️</span>
+                    <span class="label">Scissors</span>
+                </button>
+            </div>
+            
+            <div class="controls">
+                <button class="btn btn-primary" id="play-btn">Play Round</button>
+                <button class="btn btn-secondary" id="reset-btn">Reset Game</button>
+                <button class="btn btn-accent" id="auto-play-btn">Auto Play</button>
+            </div>
+            
+            <div class="stats">
+                <div class="stat wins">
+                    <div class="stat-value" id="wins-count">0</div>
+                    <div class="stat-label">Wins</div>
+                </div>
+                <div class="stat losses">
+                    <div class="stat-value" id="losses-count">0</div>
+                    <div class="stat-label">Losses</div>
+                </div>
+                <div class="stat draws">
+                    <div class="stat-value" id="draws-count">0</div>
+                    <div class="stat-label">Draws</div>
+                </div>
+            </div>
+            
+            <div class="history">
+                <h3>Game History</h3>
+                <div class="history-list" id="history-list">
+                    <!-- History items will be added here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
