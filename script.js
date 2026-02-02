@@ -85,7 +85,7 @@ function setPlayerChoice(choice) {
             button.classList.remove('active');
         }
     });
-    
+
     updatePlayerChoiceUI();
 }
 
@@ -302,4 +302,5 @@ function updateUI() {
 }
 
 // Initialize the game when the page loads
+
 window.addEventListener('DOMContentLoaded', initGame);
